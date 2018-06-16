@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>FormCheckServlet</servlet-name>
+    <servlet-class>servlet.FormCheckServlet</servlet-class>
+    
+  </servlet>
+  <servlet>
+    <servlet-name>LoginCheck</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.LoginCheck</servlet-class>
+  </servlet>
+	<servlet>
+		<servlet-name>UserDelete</servlet-name>
+		<servlet-class>servlet.UserDelete</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookDelete</servlet-name>
+		<servlet-class>servlet.BookDelete</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookInsert</servlet-name>
+		<servlet-class>servlet.BookInsert</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookUpdate</servlet-name>
+		<servlet-class>servlet.BookUpdate</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>JbookServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.JbookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HbookServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.HbookServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>FormCheckServlet</servlet-name>
+    <url-pattern>/formcheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginCheck</servlet-name>
+    <url-pattern>/logincheck</url-pattern>
+  </servlet-mapping>
+ 	<servlet-mapping>
+		<servlet-name>UserDelete</servlet-name>
+		<url-pattern>/userdelete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookDelete</servlet-name>
+		<url-pattern>/bookdelete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookInsert</servlet-name>
+		<url-pattern>/bookinsert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookUpdate</servlet-name>
+		<url-pattern>/bookupdate</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JbookServlet</servlet-name>
+    <url-pattern>/jbookservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HbookServlet</servlet-name>
+    <url-pattern>/hbookservlet</url-pattern>
+  </servlet-mapping>
+  
+	
+</web-app>
