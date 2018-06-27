@@ -6,3 +6,4 @@
 (4)一般用户只能查询图书，并进行借书还书操作，每个用户最多借阅8本，只有还书后才能继续借。</br>
 
 ![image](https://github.com/ericdoomed/bookDBMS/blob/master/bookDBMS/WebRoot/pic/bookDBMS.PNG)
+![image](https://github.com/ericdoomed/bookDBMS/blob/master/bookDBMS/WebRoot/pic/%E6%8D%95%E8%8E%B7.PNG)
