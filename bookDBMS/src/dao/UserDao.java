@@ -6,12 +6,28 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import beans.Book;
 import beans.User;
 import dbc.JdbcUtil;
 
 public class UserDao {
-	// 删除数据库用户记录的方法delete()
-	
+	// 添加用户的方法save()
+	public User save(User usr) throws Exception {
+		Connection conn = null;
+		PreparedStatement ps = null;		
+		try {
+			conn = JdbcUtil.getConnection();
+			String sql = "insert into User values(?,?)";
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, usr.getUsername());
+			ps.setInt(2, usr.getUserpwd());			
+			ps.executeUpdate();
+		} finally {
+			JdbcUtil.free(null, ps, conn);
+		}
+		return usr;		
+	}
+	// 删除数据库用户记录的方法delete()	
 	public void delete(String username) throws Exception {
 		Connection conn = null;
 		PreparedStatement ps = null;
